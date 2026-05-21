@@ -11,6 +11,18 @@
 				"VCPKG_TARGET_TRIPLET": "x64-windows-static",
 				"CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreaded$<$<CONFIG:Debug>:Debug>"
 			}
+		},
+		{
+			"name": "clangd-helper",
+			"generator": "Ninja",
+			"binaryDir": "${sourceDir}/build-clangd",
+			"cacheVariables": {
+				"CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+				"VCPKG_TARGET_TRIPLET": "x64-windows-static",
+				"CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreaded$<$<CONFIG:Debug>:Debug>",
+				"CMAKE_BUILD_TYPE": "Release",
+				"CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+			}
 		}
 	]
 }
