@@ -1,6 +1,7 @@
 {
 	"name": "ae-skyrim-plugin",
 	"version": "1.0.0",
+	"builtin-baseline": "e5a4f54c0d562059e9ccc6f7e7150667da58fe41",
 	"description": "",
 	"license": "MIT",
 	"dependencies": [
