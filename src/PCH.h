@@ -1,7 +1,7 @@
 #pragma once
 
-#include <SKSE/SKSE.h>
 #include <RE/Skyrim.h>
+#include <SKSE/SKSE.h>
 
 #include <spdlog/spdlog.h>
 
