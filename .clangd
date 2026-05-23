@@ -8,3 +8,4 @@ If:
 CompileFlags:
   Remove: [/FI*]
   Add: ["/clang:-xc++"]
+
