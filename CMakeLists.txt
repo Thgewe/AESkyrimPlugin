@@ -11,6 +11,8 @@ add_subdirectory(extern/CommonLibSSE-NG)
 
 add_library(${PROJECT_NAME} SHARED src/main.cpp)
 
+target_precompile_headers(${PROJECT_NAME} PRIVATE src/PCH.h)
+
 if (DEFINED ENV{SKYRIM_MODS_FOLDER} AND IS_DIRECTORY $ENV{SKYRIM_MODS_FOLDER})
 	set(MOD_DEPLOY_DIR "$ENV{SKYRIM_MODS_FOLDER}/${PROJECT_NAME}/SKSE/Plugins")
 	add_custom_command(

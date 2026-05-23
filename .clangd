@@ -1,2 +1,10 @@
 CompileFlags:
-	CompilationDatabase: build-clangd
+  CompilationDatabase: build-clangd
+  Remove: [/Yu*, /Fp*]
+  Add: ["/clang:-std=c++23"]
+---
+If:
+  PathMatch: .*PCH\.h
+CompileFlags:
+  Remove: [/FI*]
+  Add: ["/clang:-xc++"]

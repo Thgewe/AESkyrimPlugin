@@ -1,5 +1,3 @@
-#include <SKSE/SKSE.h>
-
 SKSEPluginVersion = []() noexcept {
 	SKSE::PluginVersionData v{};
 	v.PluginVersion({1, 0, 0});
@@ -13,6 +11,6 @@ SKSEPluginVersion = []() noexcept {
 
 SKSEPluginLoad(const SKSE::LoadInterface *skse) {
 	SKSE::Init(skse);
-	SKSE::log::info("loaded!");
+	logger::info("loaded!");
 	return true;
 }
